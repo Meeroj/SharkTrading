@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Logo from "../../assets/logo.png"
 const Navbar = () => {
     return (
@@ -15,7 +16,7 @@ const Navbar = () => {
             <div>
                 <div className="flex text-white bg-[#d30e0e] rounded-3xl text-xl">
                     <span className="py-2 px-3">SIGN</span>
-                    <div className="rounded-3xl px-3 py-1 text-xl bg-white text-black relative flex items-center gap-3"><span>UP</span><span className="h-[130%] border border-black rotate-[15deg]"></span><span>IN</span></div>
+                    <div className="rounded-3xl px-3 py-1 text-xl bg-white text-black relative flex items-center gap-3"><Link to={'/signup'}>UP</Link><span className="h-[130%] border border-black rotate-[15deg]"></span><Link to='/signin'>IN</Link></div>
                 </div>
             </div>
         </div>
