@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import AuthContext from '../../context/AuthContext';
+import BgImage from '../../assets/Background.png'
 
 export default function Signin() {
   const { login } = useContext(AuthContext);
@@ -22,7 +23,7 @@ export default function Signin() {
   };
 
   return (
-    <div className={`w-screen h-screen bg-bg-image bg-cover flex items-center justify-center`}>
+    <div className={`w-screen h-screen bg-cover flex items-center justify-center bg-[${BgImage}]`}>
       <div className="backdrop-blur-lg bg-white/10 h-[470px] flex flex-col text-center p-10 rounded-2xl relative">
         <h1 className="mb-5 text-2xl text-white">SIGNIN</h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-[400px]">
